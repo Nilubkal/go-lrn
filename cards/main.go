@@ -63,6 +63,12 @@ func main() {
 	// remainingCards.print()
 
 	// get a deck of cards from a file
-	cards := newDeckFromFile("_my_cards.txt")
+	// cards := newDeckFromFile("_my_cards.txt")
+	// cards.print()
+
+	// Generate a new deck and shuffle it
+	cards := newDeck()
+	cards.shuffle()
 	cards.print()
+
 }
