@@ -35,3 +35,6 @@ go.work.sum
 # local things
 tmp
 _*
+
+# DC_Store
+.DC_Store
