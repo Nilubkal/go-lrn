@@ -1,30 +1,32 @@
 # Go (Golang) Learning Repository
 
-This repository contains my project files and exercises from following Stephen Grider's course on Udemy: **Go: The Complete Developer's Guide (Golang)**.
+This repository contains project files and exercises from Stephen Grider's Udemy course: **Go: The Complete Developer's Guide (Golang)**.
 
 It serves as a personal log of my progress and a collection of practical examples covering various Go concepts.
 
-## Folder Contents
+## Projects
 
-### `/channels`
+This repository is organized into several projects, each focusing on different aspects of Go.
 
-This directory contains a detailed exploration of Go's concurrency model. The `main.go` file demonstrates:
+### 1. Website Status Checker (`/channels`)
 
-*   **Goroutines**: How to create lightweight threads of execution for concurrent tasks.
-*   **Channels**: How to use channels for communication and synchronization between goroutines.
-*   **Continuous Monitoring**: An implementation of a website status checker that continuously re-checks links in an endless loop.
-*   **Function Literals**: Use of anonymous functions (closures) to manage concurrent tasks with delays.
+This project demonstrates Go's powerful concurrency features through a command-line tool that checks the status of websites.
 
-The code is heavily commented to serve as a learning resource for understanding these core Go features.
+**Key Concepts:**
+*   **Goroutines**: Utilizes lightweight threads for concurrent checking of multiple websites.
+*   **Channels**: Implements channels for safe communication and synchronization between goroutines.
+*   **Continuous Monitoring**: The application runs in an endless loop to repeatedly check website statuses.
+*   **Function Literals**: Employs anonymous functions (closures) to handle the checking logic for each site.
 
-### `/exercises/OpenFile`
+### 2. File Reader CLI (`/exercises/OpenFile`)
 
-This project is a simple command-line tool that demonstrates file I/O in Go. The `main.go` file shows how to:
+This project is a simple command-line tool that showcases file I/O operations in Go. It reads a filename from the command line and prints its contents to the console.
 
-*   Read command-line arguments using the `os` package to get a filename.
-*   Open and read a file specified by the user.
-*   Handle potential errors during file operations.
-*   Use `io.Copy` to efficiently stream file contents to standard output (`os.Stdout`), which is more memory-efficient for large files than reading the entire file into memory.
+**Key Concepts:**
+*   **Command-Line Arguments**: Uses the `os` package to access arguments passed to the program.
+*   **File I/O**: Demonstrates how to open, read, and handle files.
+*   **Error Handling**: Shows proper error handling for file operations.
+*   **Efficient Streaming**: Leverages `io.Copy` to stream file contents directly to standard output (`os.Stdout`), which is highly memory-efficient, especially for large files.
 
 ---
 
